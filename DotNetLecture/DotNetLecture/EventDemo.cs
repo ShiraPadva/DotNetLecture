@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace DotNetLecture
 {
@@ -15,7 +16,7 @@ namespace DotNetLecture
             public string Message { get; set; }
         }
 
-        public class Publisher
+        public class Publisher  
         {
             // Declare an event with custom event data
             public event EventHandler<MyEventArgs> MyCustomEvent;
