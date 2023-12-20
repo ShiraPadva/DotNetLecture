@@ -7,8 +7,9 @@ class Program
     {
         Console.WriteLine("Hello world");
     
-        DelegateDemo.DelegateMain();
-
+        //DelegateDemo.DelegateMain();
+        //FileSystemWatcherExample.demo();
+        AppConfigDemo.Demo();
         return 0;
     }
 }
