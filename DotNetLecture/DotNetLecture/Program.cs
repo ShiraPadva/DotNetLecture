@@ -8,7 +8,7 @@ class Program
         Console.WriteLine("Hello world");
         DelegateDemo.Demo();
         EventDemo.Demo();
-
+        AppConfigDemo.Demo();
         return 0;
     }   
 }
