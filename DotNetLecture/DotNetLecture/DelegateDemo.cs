@@ -27,7 +27,7 @@ namespace DotNetLecture
             Console.WriteLine($"Callback received: {message}");
         }
 
-        public static void DelegateMain()
+        public static void Demo()
         {
             // Create a delegate instance pointing to the callback method
             CallbackDelegate callbackDelegate = new CallbackDelegate(MyCallback);

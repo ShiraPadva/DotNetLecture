@@ -7,8 +7,9 @@ class Program
     {
         Console.WriteLine("Hello world");
 
-        DelegateDemo.DelegateMain();
+        DelegateDemo.Demo();
+        EventDemo.Demo();
 
         return 0;
-    }
+    }   
 }
