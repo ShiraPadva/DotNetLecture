@@ -3,13 +3,16 @@ using System;
 
 class Program
 {
-    public static int Main()
+    static async Task Main()
     {
         Console.WriteLine("Hello world");
-    
-        //DelegateDemo.DelegateMain();
+
+        //DelegateDemo.DelegateMain ();
         //FileSystemWatcherExample.demo();
-        AppConfigDemo.Demo();
-        return 0;
+        //AppConfigDemo.Demo();
+        //TasksDemo.Demo();
+        //await AsyncAwaitDemo.Demo();
+        //ReflectionDemo.Demo();
+        JsonDemo.Demo();
     }
 }

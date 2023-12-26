@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetLecture", "DotNetLecture\DotNetLecture.csproj", "{6912ED82-5103-488C-BACE-5F6230AB2219}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetLecture", "DotNetLecture\DotNetLecture.csproj", "{6912ED82-5103-488C-BACE-5F6230AB2219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginLibrary", "PluginLibrary\PluginLibrary.csproj", "{2A059886-3E33-4B38-BB32-3BA4ADDC1C97}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6912ED82-5103-488C-BACE-5F6230AB2219}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6912ED82-5103-488C-BACE-5F6230AB2219}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6912ED82-5103-488C-BACE-5F6230AB2219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A059886-3E33-4B38-BB32-3BA4ADDC1C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A059886-3E33-4B38-BB32-3BA4ADDC1C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A059886-3E33-4B38-BB32-3BA4ADDC1C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A059886-3E33-4B38-BB32-3BA4ADDC1C97}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -213,3 +213,6 @@ $RECYCLE.BIN/
 
 # JetBrains Rider
 .idea/
+
+bin/
+obj/
