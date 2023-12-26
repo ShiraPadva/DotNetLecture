@@ -19,6 +19,8 @@ class Program
         //EventDemo.Demo();
         //AppConfigDemo.Demo();
         JsonDemo.Demo();
-        
+        //DelegateCallbackDemo.Demo();
+        //EventDemo.Demo();
+        //AppConfigDemo.Demo();
     }   
 }

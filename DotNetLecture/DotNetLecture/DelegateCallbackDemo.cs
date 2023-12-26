@@ -12,7 +12,7 @@ namespace DotNetLecture
     public delegate void CallbackDelegate(string message);
         
 
-    public class DelegateDemo
+    public class DelegateCallbackDemo
     {
         // Method that performs an operation and invokes the callback
         public static void PerformOperation(int x, int y, CallbackDelegate callback)
