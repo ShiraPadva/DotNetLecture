@@ -10,9 +10,9 @@ namespace DotNetLecture
 
     // Define a delegate for the callback
     public delegate void CallbackDelegate(string message);
+        
 
-
-    class DelegateDemo
+    public class DelegateDemo
     {
         // Method that performs an operation and invokes the callback
         public static void PerformOperation(int x, int y, CallbackDelegate callback)

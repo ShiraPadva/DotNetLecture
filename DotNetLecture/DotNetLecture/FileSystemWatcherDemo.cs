@@ -6,20 +6,23 @@ using System.Threading.Tasks;
 
 namespace DotNetLecture
 {
-    internal class FileSystemWatcherExample
+    internal class FileSystemWatcherDemo
     {
-        public static void demo()
+        public static void Demo()
         {
 
             // Specify the directory to monitor
-            string directoryPath = @"C:\workspace\temp";
+            string directoryPath = @"C:\temp\FileSystemWatcher";
 
             // Create a new instance of FileSystemWatcher
             FileSystemWatcher watcher = new FileSystemWatcher(directoryPath);
 
             // Set the properties for the watcher
-            watcher.IncludeSubdirectories = true; // Set to true if you want to monitor subdirectories
-            watcher.EnableRaisingEvents = true;   // Start monitoring
+            // the Changed event will be raised not only when the last write time of a file changes
+            // but also when the file or directory name changes.
+            watcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName;
+            watcher.Filter = "*.txt";
+            watcher.IncludeSubdirectories = true;
 
             // Subscribe to the events
             watcher.Created += OnFileCreated;
@@ -27,6 +30,8 @@ namespace DotNetLecture
             watcher.Changed += OnFileChanged;
             watcher.Renamed += OnFileRenamed;
 
+            watcher.EnableRaisingEvents = true;   // Start monitoring
+            
             Console.WriteLine($"Watching directory: {directoryPath}");
             Console.WriteLine("Press 'q' to quit.");
 
