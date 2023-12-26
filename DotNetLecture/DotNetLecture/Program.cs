@@ -10,7 +10,7 @@ class Program
         FileSystemWatcherDemo.Demo();
         ComplexLinqDemo.Demo();
         Console.WriteLine("Hello world");
-        DelegateDemo.Demo();
+        DelegateCallbackDemo.Demo();
         EventDemo.Demo();
         AppConfigDemo.Demo();
         return 0;
