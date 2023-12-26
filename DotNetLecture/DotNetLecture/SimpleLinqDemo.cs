@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DotNetLecture
 {
-    internal class LinqExample
+    internal class SimpleLinqDemo
     {
-        public static void demo()
+        public static void Demo()
         {
             // Sample data
             List<int> numbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };

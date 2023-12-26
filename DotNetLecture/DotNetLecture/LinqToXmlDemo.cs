@@ -7,9 +7,9 @@ using System.Xml.Linq;
 
 namespace DotNetLecture
 {
-    internal class LinqToXmlExample
+    internal class LinqToXmlDemo
     {
-        public static void demo()
+        public static void Demo()
         {
             string filePath = @"../../../books.xml";
 
