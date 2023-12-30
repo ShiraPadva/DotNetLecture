@@ -7,26 +7,33 @@ namespace DotNetLecture
     {
         public static void Demo()
         {
-            // Creating and starting a new thread
-            Thread thread = new Thread(DoWork);
-            thread.Start();
+            // Create a new thread and start it
+            Thread myThread = new Thread(MyThreadMethod);
+            myThread.Start();
 
-            // Main thread doing some work
+            // Continue with other work in the main thread
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("Main Thread: " + i);
-                Thread.Sleep(100);
+                Console.WriteLine($"Main thread is running: {i}");
+                Thread.Sleep(500);
             }
+
+            // Wait for the thread to complete (optional)
+            myThread.Join();
+
+            Console.WriteLine("Main method completed.");
         }
 
-        static void DoWork()
+        static void MyThreadMethod()
         {
-            // Work done by the new thread
+            // Code to be executed in the new thread
             for (int i = 0; i < 5; i++)
             {
-                Console.WriteLine("Worker Thread: " + i);
-                Thread.Sleep(100);
+                Console.WriteLine($"Thread is running: {i}");
+                Thread.Sleep(1000);
             }
+
+            Console.WriteLine("Thread completed.");
         }
     }
 }
