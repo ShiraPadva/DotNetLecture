@@ -19,7 +19,7 @@ namespace DotNetLecture
         public static void Demo() 
         {
             string sentence = "This is an example sentence.";
-            int count = sentence.WordCount();
+            int count = sentence.WordCount(); // WordCount(sentence)
             Console.WriteLine($"Word count: {count}"); // Output: Word count: 5
         }
     }

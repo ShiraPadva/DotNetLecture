@@ -39,7 +39,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PluginInterface.cs" />
+    <Compile Include="IPlugin.cs" />
     <Compile Include="PluginOne.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

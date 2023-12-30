@@ -15,9 +15,4 @@
     <author>Alice Johnson</author>
     <price>49.99</price>
   </book>
-  <book>
-    <title>Advanced C# Programming</title>
-    <author>Alice Johnson</author>
-    <price>49.99</price>
-  </book>
 </books>

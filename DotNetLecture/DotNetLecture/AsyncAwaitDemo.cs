@@ -5,7 +5,13 @@ namespace DotNetLecture
 {
     internal class AsyncAwaitDemo
     {
-        public static async Task Demo()
+        public static void Demo()
+        {
+            var task = InnerDemo();
+            task.Wait();
+        }
+
+        public static async Task InnerDemo()
         {
             Console.WriteLine("Starting the tasks...");
 

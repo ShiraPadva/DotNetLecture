@@ -13,7 +13,7 @@ namespace DotNetLecture
 
             // Serializing the object to JSON
             string json = JsonSerializer.Serialize(person);
-
+            
             Console.WriteLine("Serialized JSON:");
             Console.WriteLine(json);
 

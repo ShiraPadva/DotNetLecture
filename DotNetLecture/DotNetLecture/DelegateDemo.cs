@@ -13,8 +13,15 @@ namespace DotNetLecture
         public static void Demo() 
         {
             // Methods to be Used with the Delegate
-            int Add(int a, int b) => a + b;
-            int Subtract(int a, int b) => a - b;
+            int Add(int a, int b)
+            { 
+                return a + b; 
+            }
+
+            int Subtract(int a, int b)
+            {
+                return a - b;
+            }
 
             // Delegate Instances
             MathOperation addDelegate = Add;
