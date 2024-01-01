@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Text.Json;
 using System.Threading;
+using System.Xml.Linq;
+using Newtonsoft.Json.Linq;
+using NugetJObject;
 
 namespace DotNetLecture
 {
@@ -22,6 +25,21 @@ namespace DotNetLecture
 
             Console.WriteLine("Deserialized Object:");
             Console.WriteLine($"Name: {personDeserialized.Name}, Age: {personDeserialized.Age}, IsActive: {personDeserialized.IsActive}");
+
+            //////////////////////////////////////////////////
+            // JObject library
+
+            // Convert the JSON string to a JObject
+            JObject jsonObject = JObject.Parse(json);
+
+            // Add a new key-value pair
+            jsonObject["newKey"] = "newValue";
+
+            // Convert the updated JObject back to a JSON string
+            string updatedJsonString = jsonObject.ToString();
+
+            // Print the updated JSON string
+            Console.WriteLine(updatedJsonString);
 
         }
 
