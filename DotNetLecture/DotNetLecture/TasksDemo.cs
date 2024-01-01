@@ -19,6 +19,8 @@ namespace DotNetLecture
 
             // Wait for the worker task to complete
             workerTask.Wait();
+
+            Console.WriteLine("Task completed.");
         }
 
         static void DoWork()

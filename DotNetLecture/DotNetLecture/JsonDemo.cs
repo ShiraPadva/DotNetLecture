@@ -1,9 +1,5 @@
-﻿using System;
-using System.Text.Json;
-using System.Threading;
-using System.Xml.Linq;
+﻿using System.Text.Json;
 using Newtonsoft.Json.Linq;
-using NugetJObject;
 
 namespace DotNetLecture
 {
